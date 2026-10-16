@@ -398,6 +398,80 @@ header {
     margin-bottom: 2rem;
 }
 
+/* Profile Card (light card on dark background) */
+.profile-card {
+    width: 320px;
+    margin: 0 auto 2rem auto;
+    background: linear-gradient(180deg, #f8fdff 0%, #eef8ff 100%);
+    color: #06202b;
+    border-radius: 18px;
+    padding: 3.25rem 1.5rem 1.5rem;
+    box-shadow: 0 12px 30px rgba(10, 25, 45, 0.12);
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(10,25,45,0.04);
+}
+
+.profile-avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    top: -48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border: 6px solid #ffffff;
+    box-shadow: 0 8px 20px rgba(43,108,176,0.12);
+}
+
+.profile-card h3 {
+    margin-top: 40px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    color: #06202b;
+}
+
+.profile-card .title {
+    color: #2563eb;
+    font-weight: 600;
+    margin: 6px 0 12px;
+}
+
+.profile-card .bio {
+    color: #475569;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+    padding: 0 0.5rem;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+}
+
+.contact-list a {
+    color: #0f172a;
+    text-decoration: none;
+    background: rgba(255,255,255,0.55);
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+@media (min-width: 900px) {
+    .hero-container {
+        grid-template-columns: 1fr 420px;
+        align-items: start;
+    }
+    .profile-card { margin-top: 1rem; }
+}
+
 .hero-cta {
     display: flex;
     gap: 1rem;
